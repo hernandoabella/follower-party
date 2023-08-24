@@ -30,3 +30,7 @@ button {
     font-size: 16px;
     margin-top: 10px;
 }
+
+#celebrationText {
+    font-size: 24px; /* Ajusta según tus necesidades */
+}
