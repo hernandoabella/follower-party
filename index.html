@@ -16,12 +16,26 @@
     
     <div class="container">
         <h1>Followers Celebration Image Generator</h1>
+        <label for="backgroundSelect">Select Background:</label>
+            <select id="backgroundSelect">
+                <option value="white">White</option>
+                <option value="#007bff">Blue</option>
+                <option value="#28a745">Green</option>
+                <option value="#ffc107">Yellow</option>
+                <option value="#dc3545">Red</option>
+                <option value="#6c757d">Gray</option>
+                <!-- Add more options if desired -->
+            </select>
         <label for="followerCount">Enter your follower count:</label>
         <input type="number" id="followerCount" min="0">
         <button id="generateBtn">Generate Text</button>
-        <div id="celebrationText"></div>
+        
+        <div id="celebrationText">
+            
+        </div>
         <button id="screenshotBtn">Download Image</button>
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
