@@ -3,12 +3,23 @@ document.addEventListener("DOMContentLoaded", function() {
     const followerCountInput = document.getElementById("followerCount");
     const celebrationText = document.getElementById("celebrationText");
     const screenshotBtn = document.getElementById("screenshotBtn");
+    const backgroundSelect = document.getElementById("backgroundSelect");
+    const emojiButtons = document.querySelectorAll(".emoji-button");
+
+    emojiButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            const emoji = button.textContent;
+            celebrationText.innerHTML += emoji;
+        });
+    });
 
     generateBtn.addEventListener("click", function() {
         const followerCount = parseInt(followerCountInput.value);
+        const selectedBackground = backgroundSelect.value;
         if (!isNaN(followerCount)) {
             const text = generateCelebrationText(followerCount);
-            celebrationText.textContent = text;
+            celebrationText.innerHTML = text;
+            celebrationText.style.backgroundColor = selectedBackground;
         }
     });
 
@@ -17,7 +28,10 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     function generateCelebrationText(count) {
-        return `🎉 Congratulations! You've reached ${count} followers on social media! 🎉`;
+        const formattedCount = formatFollowers(count);
+        const textWithEmojis = `🎉 Congratulations! You've reached ${formattedCount} followers on social media! 🎉`;
+        const renderedText = twemoji.parse(textWithEmojis);
+        return renderedText;
     }
 
     function takeScreenshot() {
@@ -29,11 +43,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    function generateCelebrationText(count) {
-        const formattedCount = formatFollowers(count);
-        return `🎉 Congratulations! You've reached ${formattedCount} followers on social media! 🎉`;
-    }
-    
     function formatFollowers(count) {
         if (count >= 1000000) {
             return (count / 1000000).toFixed(count % 1000000 === 0 ? 0 : 1) + "M";
@@ -43,5 +52,4 @@ document.addEventListener("DOMContentLoaded", function() {
             return count.toString();
         }
     }
-    
 });
