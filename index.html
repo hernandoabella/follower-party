@@ -1,41 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Followers Celebration</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
-
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+        github project
+    </header>
     <div class="hero">
-        <h1>Welcome to Follower Party</h1>
-        <p>Join the festivities as we raise a virtual toast to your milestones. Unlock the power of social influence and revel in the art of gaining followers—the genuine way!</p>
+      <h1>Follower Party</h1>
+      <p>
+        Join the festivities as we raise a virtual toast to your milestones.
+        Unlock the power of social influence and revel in the art of gaining
+        followers—the genuine way!
+      </p>
     </div>
-    
+
     <div class="container">
-        <h1>Followers Celebration Image Generator</h1>
-        <label for="backgroundSelect">Select Background:</label>
-            <select id="backgroundSelect">
-                <option value="white">White</option>
-                <option value="#007bff">Blue</option>
-                <option value="#28a745">Green</option>
-                <option value="#ffc107">Yellow</option>
-                <option value="#dc3545">Red</option>
-                <option value="#6c757d">Gray</option>
-                <!-- Add more options if desired -->
-            </select>
-        <label for="followerCount">Enter your follower count:</label>
-        <input type="number" id="followerCount" min="0">
-        <button id="generateBtn">Generate Text</button>
-        
-        <div id="celebrationText">
-            
-        </div>
-        <button id="screenshotBtn">Download Image</button>
+      <h1>Followers Celebration Image Generator</h1>
+      <label for="backgroundSelect">Select Background:</label>
+      <select id="backgroundSelect">
+        <option value="white">White</option>
+        <option value="#007bff">Blue</option>
+        <option value="#28a745">Green</option>
+        <option value="#ffc107">Yellow</option>
+        <option value="#dc3545">Red</option>
+        <option value="#6c757d">Gray</option>
+        <!-- Add more options if desired -->
+      </select>
+      <label for="fontSelect">Select Font:</label>
+      <select id="fontSelect">
+        <option value="Arial, sans-serif">Arial</option>
+        <option value="Georgia, serif">Georgia</option>
+        <!-- Agrega más opciones aquí -->
+      </select>
+      <div id="emojiToolbar">
+        <button class="emoji-button">😀</button>
+        <button class="emoji-button">❤️</button>
+        <button class="emoji-button">🎉</button>
+        <!-- Agrega más botones con emojis aquí -->
     </div>
-    
+
+      <label for="followerCount">Enter your follower count:</label>
+      <input type="number" id="followerCount" min="0" />
+      <button id="generateBtn">Generate Text</button>
+
+      <div id="celebrationText"></div>
+      <button id="screenshotBtn">Download Image</button>
+    </div>
+
+    <footer>
+      <p>Follower Party by <em>@hernandoabella</em></p>
+    </footer>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
