@@ -1,55 +1,30 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const generateBtn = document.getElementById("generateBtn");
+    const backgroundDropdownToggle = document.getElementById("backgroundDropdownToggle");
+    const backgroundDropdown = document.getElementById("backgroundDropdown");
     const followerCountInput = document.getElementById("followerCount");
     const celebrationText = document.getElementById("celebrationText");
     const screenshotBtn = document.getElementById("screenshotBtn");
-    const backgroundSelect = document.getElementById("backgroundSelect");
-    const emojiButtons = document.querySelectorAll(".emoji-button");
-
-    emojiButtons.forEach(button => {
-        button.addEventListener("click", function() {
-            const emoji = button.textContent;
-            celebrationText.innerHTML += emoji;
-        });
+    
+    backgroundDropdownToggle.addEventListener("click", function() {
+        backgroundDropdown.classList.toggle("active");
     });
 
-    generateBtn.addEventListener("click", function() {
-        const followerCount = parseInt(followerCountInput.value);
-        const selectedBackground = backgroundSelect.value;
-        if (!isNaN(followerCount)) {
-            const text = generateCelebrationText(followerCount);
-            celebrationText.innerHTML = text;
+    const backgroundOptions = document.querySelectorAll(".background-option");
+    
+    backgroundOptions.forEach(option => {
+        option.addEventListener("click", function() {
+            const selectedBackground = option.value;
             celebrationText.style.backgroundColor = selectedBackground;
-        }
-    });
-
-    screenshotBtn.addEventListener("click", function() {
-        takeScreenshot();
-    });
-
-    function generateCelebrationText(count) {
-        const formattedCount = formatFollowers(count);
-        const textWithEmojis = `🎉 Congratulations! You've reached ${formattedCount} followers on social media! 🎉`;
-        const renderedText = twemoji.parse(textWithEmojis);
-        return renderedText;
-    }
-
-    function takeScreenshot() {
-        html2canvas(celebrationText).then(function(canvas) {
-            const link = document.createElement('a');
-            link.download = 'follower_celebration.png';
-            link.href = canvas.toDataURL('image/png');
-            link.click();
         });
-    }
+    });
 
-    function formatFollowers(count) {
-        if (count >= 1000000) {
-            return (count / 1000000).toFixed(count % 1000000 === 0 ? 0 : 1) + "M";
-        } else if (count >= 1000) {
-            return (count / 1000).toFixed(count % 1000 === 0 ? 0 : 1) + "k";
-        } else {
-            return count.toString();
+    followerCountInput.addEventListener("input", function() {
+        const followerCount = parseInt(followerCountInput.value);
+        if (!isNaN(followerCount)) {
+            const formattedCount = formatFollowers(followerCount);
+            celebrationText.innerHTML = `🎉 Congratulations! You've reached ${formattedCount} followers on social media! 🎉`;
         }
-    }
+    });
+
+    // ... (rest of the code) ...
 });
