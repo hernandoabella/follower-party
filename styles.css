@@ -57,12 +57,13 @@ button {
 }
 
 .hero h1 {
-  font-size: 46px;
+  font-size: 60px;
   margin: 10px;
 }
 
 .hero p {
   margin: 10px;
+  font-size: 30px;
 }
 
 .dropdown {
