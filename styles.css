@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -37,10 +37,6 @@ header a:hover {
   top: 50%;
 }
 
-#celebrationImage img {
-  max-width: 100%;
-}
-
 button {
   padding: 10px 20px;
   background-color: #007bff;
@@ -64,55 +60,6 @@ button {
 .hero p {
   margin: 10px;
   font-size: 30px;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  margin-right: 10px; /* Add some spacing between dropdowns */
-}
-
-.dropdown-toggle {
-  background-color: #f8f9fa;
-  border: 1px solid #ced4da;
-  padding: 5px 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  color: #333;
-}
-
-.dropdown-menu {
-  position: absolute;
-  display: none;
-  background-color: white;
-  border: 1px solid #ced4da;
-  border-top: none;
-  border-radius: 0 0 5px 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 1;
-  min-width: 150px; /* Adjust the width as needed */
-  color: #333;
-}
-
-.dropdown-menu.active {
-  display: block;
-}
-
-.dropdown-menu button {
-  display: block;
-  width: 100%;
-  text-align: left;
-  padding: 5px 10px;
-  background-color: white;
-  border: none;
-  border-bottom: 1px solid #ced4da;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  color: #333;
-}
-
-.dropdown-menu button:hover {
-  background-color: #f8f9fa;
 }
 
 #celebrationText {
@@ -149,4 +96,11 @@ footer {
 .tool-bar ul li {
   padding: 10px;
   background: #dfdfdf;
+  width: 100%;
+  cursor: pointer;
+}
+
+.tool-bar ul li:hover {
+  background: #333;
+  color: #fff;
 }
