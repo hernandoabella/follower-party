@@ -130,3 +130,21 @@ footer {
   position: fixed;
   bottom: 0;
 }
+
+.tool-bar {
+  display: flex;
+}
+
+.tool-bar span {
+  padding: 10px;
+  background: #333;
+  color: #fff;
+}
+
+.tool-bar ul {
+  list-style: none;
+}
+
+.tool-bar ul li {
+  padding: 10px;
+}
