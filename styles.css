@@ -133,6 +133,7 @@ footer {
 
 .tool-bar {
   display: flex;
+  border: 1px solid #333;
 }
 
 .tool-bar span {
@@ -147,4 +148,5 @@ footer {
 
 .tool-bar ul li {
   padding: 10px;
+  background: #dfdfdf;
 }
