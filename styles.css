@@ -104,3 +104,9 @@ footer {
   background: #333;
   color: #fff;
 }
+
+.dropdown div {
+  padding: 10px;
+  background: #333;
+  color: #fff;
+}
