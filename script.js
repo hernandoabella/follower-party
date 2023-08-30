@@ -71,6 +71,33 @@ numberContainer.addEventListener("click", function (event) {
   }
 });
 
+// Obtén el encabezado del dropdown de fondo
+const backgroundDropdownHeader = document.querySelector("#backgroundDropdown .dropdown-header");
+
+// Event listener para el clic en el encabezado del dropdown de fondo
+backgroundDropdownHeader.addEventListener("click", function () {
+  const dropdownList = document.querySelector("#backgroundDropdown ul");
+  dropdownList.classList.toggle("show");
+});
+
+// Obtén el encabezado del dropdown de fuente
+const fontDropdownHeader = document.querySelector("#fontDropdown .dropdown-header");
+
+// Event listener para el clic en el encabezado del dropdown de fuente
+fontDropdownHeader.addEventListener("click", function () {
+  const dropdownList = document.querySelector("#fontDropdown ul");
+  dropdownList.classList.toggle("show");
+});
+
+// Obtén el encabezado del dropdown de emojis
+const emojiDropdownHeader = document.querySelector("#emojiDropdown .dropdown-header");
+
+// Event listener para el clic en el encabezado del dropdown de emojis
+emojiDropdownHeader.addEventListener("click", function () {
+  const dropdownList = document.querySelector("#emojiDropdown ul");
+  dropdownList.classList.toggle("show");
+});
+
 
 // Cierra los dropdowns cuando se hace clic fuera de ellos
 window.addEventListener("click", function (event) {
