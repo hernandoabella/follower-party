@@ -63,6 +63,7 @@ header a:hover {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
   margin: 20px;
+  border: 1px solid #333;
 }
 
 footer {
@@ -133,12 +134,14 @@ footer {
 }
 
 .followerCountTitle {
-  background: #333;
-  color: #fff;
+  background: #82f0ff;
+  color: #333;
   border-radius: 5px 0px 0px 5px;
   padding: 10px;
+  border: 1px solid #333;
 }
 
 .followerC {
   display: flex;
 }
+
