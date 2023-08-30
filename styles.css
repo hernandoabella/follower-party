@@ -109,8 +109,6 @@ footer {
 
 .followerCountContainer {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 #followerCount {
@@ -118,8 +116,19 @@ footer {
   border: 1px solid #333;
   width: 100px;
   font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
 }
 
 #downloadBtn {
   padding: 10px;
+  background: rgb(96, 96, 255);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.followerCountTitle {
+  font-weight: bold;
 }
