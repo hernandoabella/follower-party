@@ -107,3 +107,15 @@ window.addEventListener("click", function (event) {
     }
   });
 });
+
+const downloadBtn = document.getElementById("downloadBtn");
+
+downloadBtn.addEventListener("click", function () {
+  html2canvas(document.querySelector("#celebrationText")).then(function (canvas) {
+    const link = document.createElement("a");
+    link.href = canvas.toDataURL();
+    link.download = "celebration.png";
+    link.click();
+  });
+});
+
