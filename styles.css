@@ -12,6 +12,9 @@ body {
 
 header {
   padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header a {
@@ -80,7 +83,6 @@ footer {
 
 .tool-bar {
   display: flex;
-  border: 1px solid #333;
 }
 
 .tool-bar span {
@@ -105,8 +107,13 @@ footer {
   color: #fff;
 }
 
+.dropdown {
+  margin: 10px;
+}
+
 .dropdown div {
   padding: 10px;
   background: #333;
   color: #fff;
+  width: 200px;
 }
