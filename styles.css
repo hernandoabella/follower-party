@@ -56,6 +56,7 @@ header a:hover {
 }
 
 #celebrationText {
+  font-family: "Roboto", sans-serif;
   font-size: 24px; /* Ajusta según tus necesidades */
   background-color: white;
   padding: 20px;
@@ -144,4 +145,3 @@ footer {
 .followerC {
   display: flex;
 }
-
