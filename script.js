@@ -36,11 +36,24 @@ emojiOptions.forEach(function (option) {
 // Obtén el elemento del input de seguidores
 const followerCountInput = document.getElementById("followerCount");
 
+// Función para formatear el número con "k" o "M"
+function formatNumber(number) {
+  if (number >= 1000000) {
+    return (number / 1000000).toFixed(1) + "M";
+  } else if (number >= 1000) {
+    return (number / 1000).toFixed(1) + "k";
+  } else {
+    return number.toString();
+  }
+}
+
 // Event listener para el cambio en el input de seguidores
 followerCountInput.addEventListener("input", function () {
   const followerCount = followerCountInput.value;
-  celebrationText.textContent = `🎉 Congratulations! You've reached ${followerCount} followers on social media! 🎉`;
+  const formattedCount = formatNumber(followerCount);
+  celebrationText.textContent = `🎉 Congratulations! You've reached ${formattedCount} followers on social media! 🎉`;
 });
+
 
 // Cierra los dropdowns cuando se hace clic fuera de ellos
 window.addEventListener("click", function (event) {
