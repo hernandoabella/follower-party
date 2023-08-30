@@ -106,3 +106,20 @@ footer {
   color: #fff;
   width: 200px;
 }
+
+.followerCountContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#followerCount {
+  padding: 10px;
+  border: 1px solid #333;
+  width: 100px;
+  font-weight: bold;
+}
+
+#downloadBtn {
+  padding: 10px;
+}
