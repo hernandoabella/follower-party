@@ -54,6 +54,23 @@ followerCountInput.addEventListener("input", function () {
   celebrationText.textContent = `🎉 Congratulations! You've reached ${formattedCount} followers on social media! 🎉`;
 });
 
+// Obtén el contenedor de números
+const numberContainer = document.getElementById("numberContainer");
+
+// Event listener para los números
+numberContainer.addEventListener("click", function (event) {
+  const clickedElement = event.target;
+
+  if (clickedElement.classList.contains("number-with-symbol")) {
+    const value = clickedElement.getAttribute("data-value");
+    const followerCountInput = document.getElementById("followerCount");
+    followerCountInput.value = value;
+
+    // Dispara el evento 'input' manualmente para actualizar el texto de celebración
+    followerCountInput.dispatchEvent(new Event("input"));
+  }
+});
+
 
 // Cierra los dropdowns cuando se hace clic fuera de ellos
 window.addEventListener("click", function (event) {
