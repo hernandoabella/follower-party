@@ -160,3 +160,27 @@ footer {
   margin: 0px 5px;
   cursor: pointer;
 }
+
+#backgroundDropdown ul {
+  display: none;
+}
+
+#backgroundDropdown ul.show {
+  display: block;
+}
+
+#fontDropdown ul {
+  display: none;
+}
+
+#fontDropdown ul.show {
+  display: block;
+}
+
+#emojiDropdown ul {
+  display: none;
+}
+
+#emojiDropdown ul.show {
+  display: block;
+}
