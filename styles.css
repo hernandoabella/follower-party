@@ -145,3 +145,17 @@ footer {
 .followerC {
   display: flex;
 }
+
+.numbers {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.numbers div {
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin: 0px 5px;
+  cursor: pointer;
+}
