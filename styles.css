@@ -42,6 +42,7 @@ header a:hover {
 
 .hero {
   text-align: center;
+  padding: 20px;
 }
 
 .hero h1 {
@@ -109,6 +110,7 @@ footer {
 
 .followerCountContainer {
   display: flex;
+  justify-content: center;
 }
 
 #followerCount {
@@ -117,7 +119,8 @@ footer {
   width: 100px;
   font-weight: bold;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 0px 5px 5px 0px;
+  outline: none;
 }
 
 #downloadBtn {
@@ -130,5 +133,12 @@ footer {
 }
 
 .followerCountTitle {
-  font-weight: bold;
+  background: #333;
+  color: #fff;
+  border-radius: 5px 0px 0px 5px;
+  padding: 10px;
+}
+
+.followerC {
+  display: flex;
 }
