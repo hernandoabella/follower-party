@@ -1,1 +1,1 @@
-# followerparty
+# follower-party
