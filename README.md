@@ -1,5 +1,5 @@
 # follower-party
-Celebrate your followers with a nice post
+Celebrate all the followers with a stylish post.
 
 ### Main features:
 - Light / dark mode
