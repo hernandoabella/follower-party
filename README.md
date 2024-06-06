@@ -1,4 +1,4 @@
-# follower-party
+# Follower Party
 Celebrate your social influence!
 
 ### Main features:
