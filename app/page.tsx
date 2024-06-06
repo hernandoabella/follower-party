@@ -67,7 +67,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex mt-10">
+        <div className="mt-10">
           <div>
             <div>
               <h2 className="text-1xl font-bold mb-2">Number of followers</h2>
@@ -88,6 +88,18 @@ export default function Home() {
               ))}
             </div>
           </div>
+
+          <div>
+            <div>
+              <h2 className="text-1xl font-bold mb-2">Select background</h2>
+            </div>
+            <div>
+              <button>Red</button>
+              <button>Blue</button>
+              <button>Green</button>
+            </div>
+          </div>
+          
           <div>
             <div>
               <h2 className="text-1xl font-bold mb-2">Select social media</h2>
