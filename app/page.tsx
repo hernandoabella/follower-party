@@ -27,9 +27,9 @@ export default function Home() {
   };
 
   const socialMediaIcons = [
-    { icon: <RiTwitterXFill />, name: "Twitter" },
     { icon: <RiFacebookFill />, name: "Facebook" },
     { icon: <RiInstagramFill />, name: "Instagram" },
+    { icon: <RiTwitterXFill />, name: "Twitter" },
   ];
 
   return (
