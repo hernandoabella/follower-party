@@ -8,7 +8,7 @@ import {
 } from "react-icons/ri";
 
 export default function Home() {
-  const [followers, setFollowers] = useState<number>(0);
+  const [followers, setFollowers] = useState<number>(100);
   const [selectedIcon, setSelectedIcon] = useState<JSX.Element>(
     <RiInstagramFill />
   );
