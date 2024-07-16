@@ -20,8 +20,5 @@ If you love coding and would like to give me a hand by adding some awesome ideas
 
 Follow the ✨ [Contribution.md](/Contribution.md) file.
 
-### Would you like to support this project? 🤑
-paypal.me/haoficial 
-
 Developed by Hernando Abella with ☕ & ♥️
 contact me @: www.hernandoabella.com
